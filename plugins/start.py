@@ -88,8 +88,16 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("😊 About Me", callback_data = "about"),
-                    InlineKeyboardButton("🔒 Close", callback_data = "close")
+                    InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ", url='https://t.me/Team_Legend_Official')
+                ],
+                [
+                    InlineKeyboardButton("ᴀʙᴏᴜᴛ ʙᴏᴛ", callback_data = "about"), 
+                    InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ", url='https://t.me/Itz_Shixnu'),
+                    InlineKeyboardButton("ᴄʟᴏꜱᴇ", callback_data = "close")
+                ],
+                [
+                    InlineKeyboardButton("ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ", url='https://t.me/TeamLegend_Backup'),
+                    InlineKeyboardButton("ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ", url='https://t.me/TeamLegendOfficial_bot')
                 ]
             ]
         )
@@ -123,13 +131,20 @@ async def not_joined(client: Client, message: Message):
     buttons = [
         [
             InlineKeyboardButton(
-                "Join Channel",
+                "˹ Tᴇᴀᴍ Lᴇɢᴇɴᴅ ✘ Eᴅᴜᴄᴀᴛɪᴏɴ ˼ ⚡️",
+                url = "https://t.me/Team_Legend_Official")
+        ],
+        [
+            InlineKeyboardButton(
+                "˹ Tᴇᴀᴍ Lᴇɢᴇɴᴅ ✘ Bᴀᴄᴋᴜᴘ ˼ ❤️",
                 url = client.invitelink)
         ],
+        [
             InlineKeyboardButton(
-                "Join Channel",
-                url = f"https://t.me/dub_flix")
-     ]
+                "ꜱʜᴀʀᴇ ᴛʜɪꜱ ʙᴏᴛ 👨🏻‍💻",
+                url = "https://telegram.me/share/url?url=https://t.me/LegendFileSaver_Bot")
+        ]
+    ]
     try:
         buttons.append(
             [
