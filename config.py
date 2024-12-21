@@ -19,20 +19,20 @@ APP_ID = int(os.environ.get("APP_ID", "28243586"))
 API_HASH = os.environ.get("API_HASH", "4022d5686b9b7a7cf8891205921a0ab3")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002000189850"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002377004374"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "7871556756"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "5961139833"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://madarazbotz:8TqHv7F14y0XXpYG@cluster0.alssf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://madarazbotz:C1wJMA7Yyq2IpWsi@cluster0.olxrn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002197951128"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002000365934"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -40,7 +40,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "<b> 𝗛𝗲𝘆 , {mention} ✨️ \n\n𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝗧𝗼 𝗧𝗲𝗮𝗺 𝗟𝗲𝗴𝗲𝗻𝗱 𝗢𝗳𝗳𝗶𝗰𝗶𝗮𝗹 ❤️⚡️ \n━━━━━━━━━━━ ☆ ━━━━━━━━━━━ \n➥ 𝗣𝗿𝗼𝘃𝗶𝗱𝗲𝘀 𝗙𝗿𝗲𝗲 𝗦𝘁𝘂𝗱𝘆 𝗠𝗮𝘁𝗲𝗿𝗶𝗮𝗹𝘀 📚 \n𝗙𝗼𝗿 𝗡𝗘𝗘𝗧 , 𝗝𝗘𝗘 , 𝗕𝗢𝗔𝗥𝗗𝗦 & 𝗖𝗨𝗘𝗧 🔥 \n━━━━━━━━━━━ ☆ ━━━━━━━━━━━ \n➥ 𝗜𝗙 𝗨 𝗟𝗶𝗸𝗲 𝗧𝗵𝗶𝘀 𝗕𝗼𝘁 , 𝗠𝘂𝘀𝘁 𝗦𝗵𝗮𝗿𝗲 𝗧𝗵𝗶𝘀 𝗕𝗼𝘁 👀❤️ #𝗧𝗘𝗔𝗠_𝗟𝗘𝗚𝗘𝗡𝗗_𝗢𝗙𝗙𝗜𝗖𝗜𝗔𝗟 ⚜️ \n━━━━━━━━━━━ ☆ ━━━━━━━━━━━ \n➥ 𝗠𝗮𝗱𝗲 𝗕𝘆 ➤ @Itz_Shixnu 🥤 \n➥ 𝗠𝘂𝘀𝘁 𝗝𝗼𝗶𝗻 ➤ @TeamLegend_Backup ✨️ \n ━━━━━━━━━━━ ☆ ━━━━━━━━━━━</b>")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "2099486124").split()):
+    for x in (os.environ.get("ADMINS", "7871556756 6447084129 5961139833 6551906246 6586546549").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
